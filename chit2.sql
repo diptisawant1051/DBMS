@@ -1,6 +1,6 @@
-create table borrower(rollin int primary key,name varchar(20),dateofissuedate date,nameofbook varchar(20),status varchar(20));
+create table borrower(rollin int primary key,name varchar(20),dateofissue date,nameofbook varchar(20),status varchar(20));
 desc borrower;
-create table fine(rollno int,foreign key(rollno) references borrower(rollin),returndatedate,amount int);
+create table fine(rollno int,foreign key(rollno) references borrower(rollin),returndate date,amount int);
 desc fine;
 insert into borrower values(1,'abc','2017-08-01','SEPM','PEN')$
 insert into borrower values(2,'xyz','2017-07-01','DBMS','PEN')$
