@@ -1,4 +1,4 @@
-create table borrower(rollin int primary key,name varchar(20),dateofissuedate,nameofbook varchar(20),status varchar(20));
+create table borrower(rollin int primary key,name varchar(20),dateofissuedate date,nameofbook varchar(20),status varchar(20));
 desc borrower;
 create table fine(rollno int,foreign key(rollno) references borrower(rollin),returndatedate,amount int);
 desc fine;
