@@ -16,10 +16,9 @@ FROM instructor
 GROUP BY dept_name
 HAVING avg_salary > 42000;
 
-ii)SELECT dept_name, AVG(salary) as avg_salary
-FROM instructor
-GROUP BY dept_name
-HAVING avg_salary > 42000;
+ update instructor
+ set salary=salary*1.1
+ where dept_name='cs';
 
 SELECT name
 FROM instructor
